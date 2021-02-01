@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test FrontEnd Marco Sigurtà</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
+        crossorigin="anonymous"></script>
+
+    <script id="graphic-template" type="text/x-handlebars-template">
+        <div class="graphic">
+            <div class="grapLayover" style="height: {{{ prezzo }}};"> </div>
+            <span>Doc: {{ documenti }}</span>
+            <span class="import">{{{ import }}}&euro;</span>
+        </div>
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="months">
+        <div class="month">
+            <span>Gennaio</span>
+        </div>
+        <div class="month">
+            <span>Febbraio</span>
+        </div>
+        <div class="month">
+            <span>Marzo</span>
+        </div>
+        <div class="month">
+            <span>Aprile</span>
+        </div>
+        <div class="month">
+            <span>Maggio</span>
+        </div>
+        <div class="month">
+            <span>Giugno</span>
+        </div>
+        <div class="month">
+            <span>Luglio</span>
+        </div>
+        <div class="month">
+            <span>Agosto</span>
+        </div>
+        <div class="month">
+            <span>Settembre</span>
+        </div>
+        <div class="month">
+            <span>Ottobre</span>
+        </div>
+        <div class="month">
+            <span>Novembre</span>
+        </div>
+        <div class="month">
+            <span>Dicembre</span>
+        </div>
+    </div>
+
+    <div id="graphics" class="noselect">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
